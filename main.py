@@ -3,7 +3,6 @@ from constants import SCREEN_HEIGHT, SCREEN_WIDTH
 from logger import log_state
 
 pygame.init()
-screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
 def main():
     print ("Starting Asteroids!")
@@ -11,6 +10,7 @@ def main():
     print (f"Screen height: {SCREEN_HEIGHT}")
 
     while True:
+        screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
         log_state()
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
