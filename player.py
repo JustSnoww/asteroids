@@ -6,9 +6,12 @@ from constants import PLAYER_SPEED
 import pygame
 
 class Player(CircleShape):
+    containers = ()
     def __init__(self, x, y):
         super().__init__(x, y, PLAYER_RADIUS)
         self.rotation = 0
+        for group in self.containers:
+            group.add(self)
 
     def triangle(self):
         forward = pygame.Vector2(0, 1).rotate(self.rotation)
