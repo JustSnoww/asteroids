@@ -6,6 +6,7 @@ from player import Player
 
 def main():
 
+    #testing
     pygame.init()
     print ("Starting Asteroids!")
     print (f"Screen width: {SCREEN_WIDTH}")
