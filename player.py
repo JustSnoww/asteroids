@@ -1,8 +1,10 @@
 from circleshape import CircleShape
-from constants import PLAYER_RADIUS 
-from constants import LINE_WIDTH
-from constants import PLAYER_TURN_SPEED
-from constants import PLAYER_SPEED
+from constants import (
+    PLAYER_RADIUS,
+    LINE_WIDTH,
+    PLAYER_TURN_SPEED,
+    PLAYER_SPEED
+)
 import pygame
 
 class Player(CircleShape):
